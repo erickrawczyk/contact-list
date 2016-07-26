@@ -1,11 +1,6 @@
 import React from 'react';
 import Contact from './Contact.jsx';
 
-const USER_SEED = '7b34eedd6473b219';
-const NUM_USERS = 20;
-const LOCALE    = 'us'
-const USER_URL  = `https://randomuser.me/api?results=${NUM_USERS}&seed=${USER_SEED}&nat=${LOCALE}`;
-
 class ContactList extends React.Component {
 
   constructor(props) {
@@ -17,6 +12,10 @@ class ContactList extends React.Component {
 
   componentDidMount() {
     var _this = this;
+    const USER_SEED = '7b34eedd6473b219';
+    const NUM_USERS = 20;
+    const LOCALE    = 'us'
+    const USER_URL  = `https://randomuser.me/api?results=${NUM_USERS}&seed=${USER_SEED}&nat=${LOCALE}`;
     this.serverRequest = fetch(USER_URL)
       .then(res => res.json())
       .then((data) => {
