@@ -32,7 +32,7 @@ class ContactList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{paddingTop: '64px'}}>
         {this.state.contacts.map((contact) => {
           return <Contact contact={contact} key={contact.login.md5}/>
         })}
