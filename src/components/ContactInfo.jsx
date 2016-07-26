@@ -11,7 +11,7 @@ class ContactInfo extends React.Component {
 
   getAddress() {
     return `
-      ${this.props.contact.location.street.capitalize()}\n
+      ${this.props.contact.location.street.capitalize()}.
        ${this.props.contact.location.city.capitalize()},
        ${this.props.contact.location.state.capitalize()} ${this.props.contact.location.postcode}
     `
