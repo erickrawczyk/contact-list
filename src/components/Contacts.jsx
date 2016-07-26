@@ -14,12 +14,16 @@ class Contacts extends React.Component {
       bottom: '1.25em',
       right: '1.25em'
     }
+    this.appBarStyle = {
+      position: 'fixed',
+      maxWidth: '1000px'
+    }
   }
 
   render () {
     return (
       <div>
-        <AppBar title="Contacts"/>
+        <AppBar title="Contacts" style={this.appBarStyle} />
         <ContactList />
         <FloatingActionButton style={this.addButtonStyle}>
           <ContentAdd />
