@@ -1,0 +1,23 @@
+{
+  "name": "contact-list",
+  "version": "1.0.0",
+  "description": "A simple contact list to demonstrate React, Webpack, and Material-UI",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Haha you think I wrote tests for a lightning talk?\" && exit 1",
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "author": "Eric Krawczyk",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "material-ui": "^0.15.2",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-tap-event-plugin": "^1.0.0",
+    "webpack": "^1.13.1"
+  }
+}
