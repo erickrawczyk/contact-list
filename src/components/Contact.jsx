@@ -29,12 +29,6 @@ class Contact extends React.Component {
         <CardText expandable={true}>
           <ContactInfo contact={this.props.contact}/>
         </CardText>
-        {/*
-        <CardActions expandable={true}>
-          <RaisedButton label="Call" secondary={true} backgroundColor='4b7a0e'/>
-          <RaisedButton label="Text" />
-        </CardActions>
-        */}
       </Card>
     );
   }
